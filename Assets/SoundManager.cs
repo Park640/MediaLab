@@ -101,6 +101,7 @@ public class SoundManager : MonoBehaviour
         if (isSeagul)
         {
             isSeagul = false;
+            seagul.GetComponent<AudioSource>().enabled = true;
             seagul.GetComponent<AudioSource>().Play();
         }
         if (isSeagulStop)

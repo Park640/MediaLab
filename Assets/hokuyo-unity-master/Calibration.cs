@@ -5,7 +5,7 @@ using UnityEngine;
 public class Calibration : MonoBehaviour
 {
     public Camera mainCam;
-    public GameObject dot, dot1;
+    public GameObject[] dots;
     float camWidth, camHeight; // 카메라의 너비, 높이
     
     int sWidth, sHeight;
@@ -16,7 +16,6 @@ public class Calibration : MonoBehaviour
         camWidth = mainCam.aspect * camHeight;
         sWidth = Screen.width;
         sHeight = Screen.height;
-        dot.SetActive(true);
     }
     private void Start()
     {
@@ -34,8 +33,7 @@ public class Calibration : MonoBehaviour
             dy = camHeight*2;
             for (int j = 0; j < 3; j++)
             {
-                prefabs = Instantiate(dot);
-                prefabs.transform.position = new Vector3(dx, dy, 0);
+                dots[i].transform.position = new Vector3(dx, dy, 0);
                 dy -= camHeight;
                 i++;
             }
