@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5263497066329346455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5263497066329346453}
+  - component: {fileID: 5263497066329346454}
+  m_Layer: 0
+  m_Name: Scenario
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5263497066329346453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5263497066329346455}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5263497066329346454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5263497066329346455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e65a4fcabfff8840b8672c47d4ce282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screen:
+  - {fileID: 0}
+  - {fileID: 0}
+  earthAnim: {fileID: 0}
+  nextAnim: {fileID: 0}
+  earth: {fileID: 0}
+  truck: {fileID: 0}
+  truckObj: {fileID: 0}
+  meatFac: {fileID: 0}
+  felling: {fileID: 0}
+  cow: {fileID: 0}
+  factory: {fileID: 0}
+  hamburger: {fileID: 0}
+  hamburger2: {fileID: 0}
+  hamburger3: {fileID: 0}
+  meat2: {fileID: 0}
+  nextBtn: {fileID: 0}
+  children: {fileID: 0}
+  steak: {fileID: 0}
+  colorAnim:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  sceneNo: 1
