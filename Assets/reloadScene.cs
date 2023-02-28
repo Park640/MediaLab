@@ -13,7 +13,7 @@ public class reloadScene : MonoBehaviour
 
     private void OnMouseDown()
     {
-        SoundManager.isClick = true;
+        /*SoundManager.isClick = true;
         plane.SetActive(false);
         firstScene.SetActive(true);
         var child = soundManage.GetComponentsInChildren<AudioSource>();
@@ -22,13 +22,15 @@ public class reloadScene : MonoBehaviour
             sound.Stop();
         }
         earth.SetActive(false);
-        earth.GetComponent<Animator>().enabled = false;
+        earth.GetComponent<Animator>().enabled = false;*/
         //SceneManager.LoadScene("Mart");
+        StartZone.isStartScene = true;
+        SceneManager.LoadScene("Mart");
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        SoundManager.isClick = true;
+        /*SoundManager.isClick = true;
         plane.SetActive(false);
         firstScene.SetActive(true);
         var child = soundManage.GetComponentsInChildren<AudioSource>();
@@ -37,6 +39,8 @@ public class reloadScene : MonoBehaviour
             sound.Stop();
         }
         earth.SetActive(false);
-        earth.GetComponent<Animator>().enabled = false;
+        earth.GetComponent<Animator>().enabled = false;*/
+        StartZone.isStartScene = true;
+        SceneManager.LoadScene("Mart");
     }
 }

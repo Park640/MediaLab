@@ -37,7 +37,7 @@ public class HokuyoTest : MonoBehaviour
 
     public Vector2 MappedPos(ProcessedObject obj)
     {
-        return new Vector2((obj.position.x - offset.x) * camWidth / width, ((obj.position.y - offset.y) * camHeight / height)+camHeight-camHeight);
+        return new Vector2(-(obj.position.x - offset.x) * camWidth / width, camHeight-((obj.position.y - offset.y) * camHeight / height));
 
     }
     private void Awake()

@@ -677,6 +677,26 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7053352997777359751, guid: 87d4186b190fb85488f208f8a6635354, type: 3}
+      propertyPath: detectRectWidth
+      value: 4550
+      objectReference: {fileID: 0}
+    - target: {fileID: 7053352997777359751, guid: 87d4186b190fb85488f208f8a6635354, type: 3}
+      propertyPath: detectRectHeight
+      value: 2750
+      objectReference: {fileID: 0}
+    - target: {fileID: 7053352997777359751, guid: 87d4186b190fb85488f208f8a6635354, type: 3}
+      propertyPath: positionOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7053352997777359751, guid: 87d4186b190fb85488f208f8a6635354, type: 3}
+      propertyPath: positionOffset.y
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7053352997777359751, guid: 87d4186b190fb85488f208f8a6635354, type: 3}
+      propertyPath: objectPositionSmoothTime
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7053352997777359751, guid: 87d4186b190fb85488f208f8a6635354, type: 3}
       propertyPath: showHardwareControlButtons
       value: 0
       objectReference: {fileID: 0}
@@ -2591,6 +2611,10 @@ PrefabInstance:
     - target: {fileID: 8188298315439696818, guid: a02e39833c13d7e4a8404ed816948dd0, type: 3}
       propertyPath: m_Name
       value: RayCast
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188298315439696818, guid: a02e39833c13d7e4a8404ed816948dd0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a02e39833c13d7e4a8404ed816948dd0, type: 3}
