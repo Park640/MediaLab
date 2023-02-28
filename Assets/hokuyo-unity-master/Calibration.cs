@@ -24,7 +24,6 @@ public class Calibration : MonoBehaviour
 
     public void Dot()
     {
-        GameObject prefabs;
         float dx = camWidth;
         float dy;
         int i = 0;

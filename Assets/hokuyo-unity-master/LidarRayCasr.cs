@@ -12,7 +12,6 @@ public class LidarRayCasr : MonoBehaviour
     public Camera cam;
     public GameObject calib;
     
-    bool b = false;
     [SerializeField] float coolTime = 0;
     public float maxTime;
     public bool clickable = true;
@@ -23,36 +22,8 @@ public class LidarRayCasr : MonoBehaviour
     double dx, dy; // 매핑 비율
     RaycastHit2D ray;
 
-    
-    public void Keyboard()
-    {
-        if (Input.GetKeyUp(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
-        else if (Input.GetKeyUp(KeyCode.C))
-        {
-            b = !b;
-            calib.SetActive(b);
-        }
-        else if (Input.GetKeyUp(KeyCode.Q))
-        {
-            Application.Quit();
-            Process.Start("shutdown.exe", "-s -t 5");
-        }
-        else if (Input.GetKeyUp(KeyCode.R))
-        {
-            Application.Quit();
-            Process.Start("shutdown.exe", "-r -t 5");
-        }
-        else if (Input.GetKeyDown(KeyCode.Return))
-        {
-
-        }
-    }
     private void Update()
     {
-        Keyboard();
         CoolDown();
         if (URG.detectedObjects.Count > 0 && clickable)
         {
