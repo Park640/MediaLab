@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Net.NetworkInformation;
 using UnityEngine;
 
 public class LidarRayCasr : MonoBehaviour
@@ -10,7 +11,7 @@ public class LidarRayCasr : MonoBehaviour
     public URGSensorObjectDetector URG;
     public Camera cam;
     public GameObject calib;
-
+    
     bool b = false;
     [SerializeField] float coolTime = 0;
     public float maxTime;
@@ -22,6 +23,7 @@ public class LidarRayCasr : MonoBehaviour
     double dx, dy; // 매핑 비율
     RaycastHit2D ray;
 
+    
     public void Keyboard()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
@@ -42,6 +44,10 @@ public class LidarRayCasr : MonoBehaviour
         {
             Application.Quit();
             Process.Start("shutdown.exe", "-r -t 5");
+        }
+        else if (Input.GetKeyDown(KeyCode.Return))
+        {
+
         }
     }
     private void Update()
